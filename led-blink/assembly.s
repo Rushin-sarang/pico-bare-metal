@@ -25,7 +25,7 @@ rst:
 	lsl r1,r1, #21 //move bit over to align with gpio21
 	str r1, [r0, #0x20] //offset 0x20 so it makes it output_enable register, we store r1(bit21) to make gpio21 as output pin
 	
-	//loop to blink led connected to gp2
+	//loop to blink led connected to gp21
 	
 led_loop:
 	str r1, [r0, #0x14] //offset 0x14 so it makes it output_set register, we store r1(bit21) to set gpio21 pin
